@@ -1,13 +1,13 @@
+#include "Fonctions.h"
 #include <stdio.h>
-#include "Fonctions.c"
 
 int main() {
-	int *tab;
+	int** tab;
 	int lignes, colonnes;
-	lignes = 5;
-	colonnes = 5;
+	lignes = 10;
+	colonnes = 10;
 	tab = Initialisation(5, 5);
-	AffichageTableau(tab,lignes, colonnes);
-	free(tab);
+	AffichageTableau(tab, lignes, colonnes);
+	SuppressionTab(tab, lignes);
 	return 0;
 }
